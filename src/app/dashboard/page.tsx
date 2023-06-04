@@ -1,9 +1,12 @@
-import React from "react";
-import { NextPage } from "next";
+'use client'
+import { useContext } from "react";
+import { AuthContext } from "@/contexts/AuthContext";
 
-const Dashboard: NextPage = () => {
+const Dashboard = () => {
+	const { user } = useContext(AuthContext);
 	return (
 		<>
+			<p className="text-white">{user?.username}</p>
 		</>
 	)
 }
