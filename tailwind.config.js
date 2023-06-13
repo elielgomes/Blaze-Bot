@@ -17,7 +17,8 @@ module.exports = {
 		},
 		extend: {
 			colors: {
-				"red": "#CC2843",
+				"blaze-red": "#CC2843",
+				"blaze-black": "#262f3c",
 				"gray-dark": "#1A242D",
 				"blue-dark": "#0F1923",
 			},

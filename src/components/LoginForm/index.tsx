@@ -61,7 +61,7 @@ export const LoginForm: React.FC<IProps> = ({ signIn }) => {
 
 						{
 							errors.username &&
-							<span className="px-3 mt-1 text-red text-xs absolute">
+							<span className="px-3 mt-1 text-blaze-blaze-red text-xs absolute">
 								{errors.username.message}
 							</span>
 						}
@@ -70,11 +70,10 @@ export const LoginForm: React.FC<IProps> = ({ signIn }) => {
 
 					<div className="relative">
 						<input
-							type="text"
+							type="password"
 							className="block rounded-md px-2.5 pb-2.5 pt-5 w-full text-sm text-white bg-blue-dark border-0 appearance-none focus:outline-none focus:ring-0  peer"
 							placeholder=" "
 							autoComplete="off"
-
 							{...register("password")}
 						/>
 						<label
@@ -86,13 +85,12 @@ export const LoginForm: React.FC<IProps> = ({ signIn }) => {
 
 						{
 							errors.password &&
-							<span className="px-3 mt-1 text-red text-xs absolute">
+							<span className="px-3 mt-1 text-blaze-red text-xs absolute">
 								{errors.password.message}
 							</span>
 						}
 					</div>
-
-
+					
 					<div className="w-full">
 						<div className="mb-2">
 							<a
@@ -104,7 +102,7 @@ export const LoginForm: React.FC<IProps> = ({ signIn }) => {
 						</div>
 						<button
 							type="submit"
-							className="font-semibold flex justify-center py-4 w-full text-white bg-red hover:bg-red transition duration-200 active:scale-95 focus:outline-none focus:ring-red rounded-md text-sm px-5 items-center hover:brightness-90"
+							className="font-semibold flex justify-center py-4 w-full text-white bg-blaze-red hover:bg-blaze-red transition duration-200 active:scale-95 focus:outline-none focus:ring-blaze-red rounded-md text-sm px-5 items-center hover:brightness-90"
 						>
 							{componentsString.buttons.login}
 							<svg
@@ -127,7 +125,7 @@ export const LoginForm: React.FC<IProps> = ({ signIn }) => {
 				<div className="mt-6 text-center">
 					<span className="text-gray-400 text-xs font-semibold">
 						{componentsString.dontHaveAccount}
-						<a href="/" className="text-red">
+						<a href="/" className="text-blaze-red">
 							{componentsString.createNow}
 						</a>
 					</span>

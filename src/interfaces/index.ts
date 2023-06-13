@@ -30,3 +30,11 @@ export interface ISignInData {
   username: string;
   password: string;
 }
+
+export interface IRecentHistory {
+  id: string;
+  created_at: string;
+  color: number;
+  roll: number;
+  server_seed: string;
+}
