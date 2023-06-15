@@ -31,10 +31,27 @@ export interface ISignInData {
   password: string;
 }
 
+export type TRoulletColors = "black" | "red" | "white";
+
+export type TRoulletColorsTernary = 0 | 1 | 2;
+
 export interface IRecentHistory {
   id: string;
   created_at: string;
-  color: number;
+  color: TRoulletColorsTernary;
   roll: number;
   server_seed: string;
+}
+
+export interface IOccurrencesHistoryColors {
+  0: number,
+  1: number,
+  2: number,
+}
+
+export interface ICurrentRound {
+  id: string;
+  color: number | null;
+  roll: number | null;
+  status: "waiting" | "rolling" | "complete";
 }

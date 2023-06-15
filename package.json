@@ -16,6 +16,7 @@
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
+    "chart.js": "^4.3.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
     "localized-strings": "^0.2.4",
@@ -23,6 +24,7 @@
     "nookies": "^2.5.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.44.2",
     "swiper": "^9.4.0",
@@ -32,7 +34,9 @@
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
+    "@types/chart.js": "^2.9.37",
     "@types/cookie": "^0.5.1",
+    "@types/react-chartjs-2": "^2.5.7",
     "@types/swiper": "^6.0.0"
   }
 }
